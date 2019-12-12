@@ -1,6 +1,7 @@
+ARCH?=native
 CFLAGS:= -g -Wextra -Werror
-CFLAGS+= -mtune=native -march=native -O3
-#CLFAGS+=-O0
+CFLAGS+= -mtune=$(ARCH) -march=$(ARCH) -O3
+#CFLAGS+= -O0
 
 all: wc
 
