@@ -12,4 +12,5 @@ It is not multi-threaded, because who needs it when 1 core is enough ? (Adding m
 ## Performance
 
 On my old system (Thinkpad X61 / Core2 Duo T7300 @2.00GHz / DDR2), it exhibits around 2.5-cycles/byte, eg. processing 750MB in roughly 1.5s when the file is in the page cache.
+On a high-end Skylake server (Xeon Gold 6146 @3.20GHz / DDR4) it is ridiculously fast with around 0.15-cycles/byte.
 I am confident it can beat the pants off of multi-threaded implementations in those other toy languages :)
